@@ -55,8 +55,14 @@ git remote add upstream "git@github.com:keplergl/kepler.gl.git"
 # Install JavaScript dependencies:
 yarn
 
-# Setup mapbox access token locally
+# Setup mapbox access token locally (if Linux)
 export MapboxAccessToken=<insert_your_token>
+
+# Setup mapbox access token locally (Windows Powershell)
+$env:MapboxAccessToken="<insert_your_token>"
+
+# Setup mapbox access token locally (Windows CMD)
+set MapboxAccessToken=production
 
 # Start the kepler.gl demo app
 npm start
